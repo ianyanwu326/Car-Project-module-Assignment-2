@@ -42,3 +42,4 @@ bool Vehicle::addWheel(Wheel* wheel) {
 void Vehicle::setEngine(Engine* engine) {
   this->engine = engine;
 }
+
