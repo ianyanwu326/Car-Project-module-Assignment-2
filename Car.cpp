@@ -7,4 +7,4 @@ Car::Car(std::string make, std::string model, int year, std::string body_type)
 
 std::string Car::getDescription() const {
   return Vehicle::getDescription() + " (" + body_type + ")";
-}
+} 
