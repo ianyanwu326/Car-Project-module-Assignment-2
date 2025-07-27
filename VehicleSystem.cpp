@@ -29,23 +29,3 @@ bool VehicleSystem::installEngine(int vehicle_index, int engine_index) {
   return false;
 }
 
-bool VehicleSystem::installWheel(int vehicle_index, int wheel_index) {
-  if (vehicle_index >= 0 && vehicle_index < vehicles.size() &&
-    wheel_index >= 0 && wheel_index < wheels.size()) {
-    return vehicles[vehicle_index]->addWheel(wheels[wheel_index]);
-  }
-  return false;
-}
-
-void VehicleSystem::displayAllVehicles() const {
-  for (const auto& vehicle : vehicles) {
-    vehicle->displayInfo();
-    std::cout << "----------------------------------------" << std::endl;
-  }
-}
-
-void VehicleSystem::startAllVehicles() const {
-  for (const auto& vehicle : vehicles) {
-    std::cout << vehicle->start() << std::endl;
-  }
-}
