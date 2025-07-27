@@ -6,32 +6,32 @@ components like engines and wheels. A VehicleSystem class manages the collection
 System Purpose
 
 The implementation showcases:
-- Inheritance hierarchies (Vehicle -> Car/Truck/Motorcycle)
-- Polymorphism through base class pointers
-- Aggregation relationships (Vehicle has Engine/Wheel, VehicleSystem has Vehicles)
-- Proper memory management
-- Clean class organization and separation of concerns
+Inheritance hierarchies (Vehicle -> Car/Truck/Motorcycle)
+Polymorphism through base class pointers
+Aggregation relationships (Vehicle has Engine/Wheel, VehicleSystem has Vehicles)
+Proper memory management
+Clean class organization and separation of concerns
 
 Class Structure Overview
 Core Components:
-- Vehicle.h/.cpp- Abstract base class for all vehicles
-- Car.h/.cpp - Derived class for passenger cars
-- Truck.h/.cpp - Derived class for trucks
-- Motorcycle.h/.cpp - Derived class for motorcycles
+Vehicle.h/.cpp- Abstract base class for all vehicles
+Car.h/.cpp - Derived class for passenger cars
+Truck.h/.cpp - Derived class for trucks
+Motorcycle.h/.cpp - Derived class for motorcycles
 
 Vehicle Parts:
-- Engine.h/.cpp - Manages engine specifications (type, horsepower, cylinders)
-- Wheel.h/.cpp - Handles wheel/tire data (size, type, pressure)
+Engine.h/.cpp - Manages engine specifications (type, horsepower, cylinders)
+Wheel.h/.cpp - Handles wheel/tire data (size, type, pressure)
 
 management System:
-- VehicleSystem.h/.cpp- Central class that aggregates and manages all vehicles
-- main.cpp- Demonstration program that tests the system
+VehicleSystem.h/.cpp- Central class that aggregates and manages all vehicles
+main.cpp- Demonstration program that tests the system
 
 How the System Works
 
 Creating Vehicles:
-   - i Initiated different vehicle types (Car, Truck, Motorcycle)
-   - Each vehicle requires specific components (Engine, Wheels)
+    i Initiated different vehicle types (Car, Truck, Motorcycle)
+    Each vehicle requires specific components (Engine, Wheels)
 
      The demonstration out put was
      I Complete inventory listing showing all vehicles and their components
