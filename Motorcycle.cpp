@@ -12,3 +12,4 @@ std::string Motorcycle::start() {
 std::string Motorcycle::getDescription() const {
   return Vehicle::getDescription() + " (" + bike_type + ")";
 }
+
