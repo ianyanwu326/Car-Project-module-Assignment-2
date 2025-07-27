@@ -8,3 +8,4 @@ Truck::Truck(std::string make, std::string model, int year, int towing_capacity)
 std::string Truck::getDescription() const {
   return Vehicle::getDescription() + " (Towing: " + std::to_string(towing_capacity) + " lbs)";
 }
+
